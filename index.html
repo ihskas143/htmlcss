@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar-->
+      <div
+        class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed bg-white top-0"
+      >
+        <img src="long-logo.png" alt="" class="h-14 w-26" />
+
+        <div
+          class="flex justify-evenly items-center border rounded-full shadow-md h-10 w-96"
+        >
+          <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+          <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+          <button class="text-sm font-medium text-gray-500 px-4">
+            Add Guest
+          </button>
+          <i
+            class="fa-brands fa-searchengin bg-red-500 text-white rounded-full p-2"
+          ></i>
+        </div>
+        <div class="flex justify-end items-center gap-8">
+          <button class="text-sm font-medium">Airbnb your home</button>
+          <span class="material-symbols-outlined"> language </span>
+          <div
+            class="flex justify-evenly items-center gap-1 rounded-full border shadow-md h-12 w-20 py-1.25 pr-1.25 pl-3"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <!-- <span class="material-symbols-outlined">
+            menu
+            </span>-->
+            <button class="bg-black text-white cir text-center w-7 h-7">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Category bar-->
+
+      <div
+        class="flex items-center h-24 space-x-4 top-20 fixed bg-white w-screen"
+      >
+        <div class="flex items-center justify-center space-x-2">
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-16"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> home_work </span>
+            <p class="text-xs font-medium">Historical Homes</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> Grade </span>
+            <p class="text-xs font-medium">New</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> Castle </span>
+            <p class="text-xs font-medium">Castles</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> deck </span>
+            <p class="text-xs font-medium">Beach</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> grass </span>
+            <p class="text-xs font-medium">Farms</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6">
+              sports_cricket
+            </span>
+            <p class="text-xs font-medium">Play</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> engineering </span>
+            <p class="text-xs font-medium">Luxe</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> energy </span>
+            <p class="text-xs font-medium">Windmills</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> apartment </span>
+            <p class="text-xs font-medium">A-Frames</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> sailing </span>
+            <p class="text-xs font-medium">Boats</p>
+          </div>
+          <div
+            class="flex flex-col items-center text-gray-600 font-normal hover:text-black gap-1 pl-11"
+          >
+            <img src="" alt="" />
+            <span class="material-symbols-outlined h-6 w-6"> nightlife </span>
+            <p class="text-xs font-medium">Vineyards</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined pr-2"> arrow_circle_right </span>
+        <div class="flex border round items-center h-20 p-4">
+          <span class="material-symbols-outlined"> tune </span>
+          <p class="text-xs font-medium pl-1">Filters</p>
+        </div>
+        <div class="flex border round items-center h-20 p-4">
+          <p class="text-xs font-medium">Display total before taxes</p>
+          <span class="material-symbols-outlined pl-1"> toggle_off </span>
+        </div>
+      </div>
+
+      <!-- Price Bar-->
+    </header>
+
+    <!-- hotel-->
+
+    <main class="mt-36 mx-10">
+      <div class="grid grid-cols-4">
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="/imges/download.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-xs font-medium">Thane, Maharashtra</p>
+            <div class="flex">
+              <span class="material-symbols-outlined"> star_rate </span>
+              <p class="text-xs font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">82 Kilometers away</p>
+          <p class="text-sm text-gray-400">22-27 March</p>
+          <p class="text-sm font-medium mt-2">Rs.23,434 night</p>
+        </div>
+      </div>
+    </main>
+    <div class="text-center py-2 ">
+      <p class="text-lg font-medium">Continue exploring historical home</p>
+      <button class="border w-16 h-10 bg-black text-white font-bold py-2 mt-3">Show more</button>
+    </div>
+
+    <footer class="flex justify-between h-12 items-center px-10 p-16 bg-gray-100">
+      <div class="grid">
+        <div class="grid">
+          
+        </div>
+
+      </div>
+
+      <div class="flex pl-16 space-x-3">
+        <p>© 2024 Airbnb, Inc.</p>
+        <p>·</p>
+        <p>Privacy</p>
+        <p>·</p>
+        <p>Terms</p>
+        <p>·</p>
+        <p>Sitemap</p>
+        <p>·</p>
+        <p>Company details</p>
+      </div>
+      <div class="flex justify-around pr-16 space-x-3">
+        <span class="material-symbols-outlined"> language </span>
+        <p class="text-sm font-medium">English (IN)</p>
+        <p></p>
+        <p class="text-sm font-medium">Rs.INR</p>
+        <p></p>
+        <img src="/imges/insta.jpg" alt="" class="h-2 w-2" />
+        <img src="/imges/twitter.jpg" alt="" class="h-2 w-2" />
+        <img src="/imges/facebook.jpg" alt="" class="h-2 w-2" />
+      </div>
+    </footer>
+  </body>
+</html>
